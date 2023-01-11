@@ -5,6 +5,13 @@ body {
   margin: 0;
 }
 
+header {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
 h1 {
   font-size: 36px;
   text-align: center;
@@ -22,4 +29,20 @@ p {
 
 ul {
   text-align: center;
+}
+
+div {
+  text-align: center;
+}
+
+button {
+  align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
 }
