@@ -1,8 +1,16 @@
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.42857143;
-  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #0a6da7;
+}
+
+.container {
+  width: 400px;
+  height: 420px;
+  background: #fff;
+  border-radius: 8px;
 }
 
 header {
@@ -28,7 +36,7 @@ p {
 }
 
 ul {
-  text-align: center;
+  height: 100px;
 }
 
 div {
@@ -45,4 +53,8 @@ button {
   border: 2px solid #ffffff;
   border-radius: 8px;
   cursor: pointer;
+}
+
+ul {
+  transform: translate(-10px, 0px);
 }
