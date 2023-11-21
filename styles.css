@@ -15,3 +15,15 @@ body {
 .Experience {
     text-decoration: underline;
 }
+
+img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.Links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 10%;
+}
