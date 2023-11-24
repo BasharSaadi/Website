@@ -4,26 +4,60 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.Experience {
-    text-decoration: underline;
-}
-
-img {
-    width: 200px;
+.pp {
+    width: 150px;
     border-radius: 50%;
 }
 
-.Links {
+.Experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links {
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 10%;
+    width: 50%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.institution {
+    width: 100px;
+}
+
+.date {
+    align-items: center;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
 }
