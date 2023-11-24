@@ -1,13 +1,15 @@
 /* Center all content */
 
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.profile-header {
+.head-container {
     display: flex;
     flex-direction: row;
-    padding-bottom: 10%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 body {
@@ -18,8 +20,8 @@ body {
 }
 
 .pp {
-    padding: 10px;
-    width: 150px;
+    margin-right: 60px;
+    width: 200px;
     border-radius: 50%;
 }
 
@@ -30,15 +32,18 @@ body {
     align-items: center;
 }
 
+.solid {
+    border-top: 3px solid #530be4;
+}
+
 .social-btn {
     width: 40px;
     border-radius: 20%;
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    width: 30px;
+    height: 30px;
 }
 
 .container {
@@ -51,11 +56,10 @@ body {
     width: 100px;
 }
 
-.date {
-    align-items: center;
-    flex-direction: column;
+#t1 {
+    padding: 0;
+    margin: 0;
 }
-
 .info {
     display: flex;
     flex-direction: row;
@@ -75,35 +79,35 @@ hr {
 
 /* CSS */
 #btn {
-  align-items: center;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-  border: 0;
-  border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  display: flex;
-  font-size: 20px;
-  justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
-  padding: 19px 24px;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  cursor: pointer;
+    align-items: right;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 20px;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 19px 24px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-top: 10%;
 }
 
-.button-63:active,
-.button-63:hover {
+.btn:active,
+.btn:hover {
   outline: 0;
 }
 
 @media (min-width: 768px) {
-  .button-63 {
+  .btn {
     font-size: 24px;
     min-width: 196px;
   }

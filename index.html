@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
     <title>Bashar Saadi - Software Engineer</title>
 </head>
 <body>
     <header>
-        <div class="profile-header">
-            <div class="container">
-                <img class="pp" src="./imgs/Bashar.jpeg" alt="">
+        <div class="head-container">
+            <img class="pp" src="./imgs/Bashar.jpeg" alt="">
+            <div>
                 <h1>Bashar Saadi</h1>
-                <h3>Software Engineer</h3>
+                <h3 id="t1">Software Engineer</h3>
+                <p>Interested in merging AI and Manufacturing</p>
                 <div>
                     <button>
                         <a href="https://github.com/BasharSaadi"><img class="logo" src="./imgs/github.png" alt=""></a>
@@ -21,24 +25,23 @@
                     <button>
                         <a href="https://twitter.com/BasharOkay"><img class="logo" src="./imgs/X.png" alt=""></a>
                     </button>
-                </div>
-                <div>
                     <button id="btn" onclick="joke()">Joke Generator</button>
                 </div>
             </div>
+           
         </div>
     </header>
     <main>
-        <hr>
+        <hr class="solid">
         <div class="Experience">
             <div class="container">
                 <img class="institution" src="./imgs/Ross.jpeg" alt="">
                 <h3>Ross Video</h3>
-                <h4 class="date">September 2022 - December 2022</h4>
+                <h4>September 2022 - December 2022</h4>
                 <div class="info">
                     <p>
                         Joined Ross Video as a Automation Specialist, where I worked on 
-                        the development of a new product, specifically the
+                        the development of Inception, specifically the
                         unit and integration testing of the product. I also
                         contributed to the development and maintaince of the
                         CI/CD pipeline.
@@ -48,15 +51,14 @@
             <div class="container">
                 <img class="institution" src="./imgs/DataVisual.jpeg" alt="">
                 <h3>DataVisual Marketing</h3>                
-                <h4 class="date">November 2019 - January 2022</h4>
+                <h4>November 2019 - January 2022</h4>
                 <div class="info">
                     <p>
                         Joined DataVisual as a Jr. Tech Engineer, where I spent a lot of time 
-                        troubleshooting and fixing issues with various audio 
+                        troubleshooting and solving problems with various audio 
                         and visual equitment. I also spent a lot of time
-                        in the warehouse where shipping/receiving I was 
-                        responsible for maintaining inventory and updating 
-                        values using Quickbooks. I provided desktop support
+                        in the warehouse where I was shipping/receiving products and
+                        maintaining inventory. I provided desktop support
                         24/7 for the office and our customers.
                     </p>
                 </div>
@@ -64,12 +66,12 @@
             <div class="container">
                 <img class="institution" src="./imgs/Carleton_University.jpeg" alt="">                
                 <h3>Carleton University</h3>
-                <h4 class="date">September 2020 - December 2025</h4>
+                <h4>September 2020 - December 2025</h4>
                 <div class="info">
                     <p>
                         Currently a 3rd year student at Carleton University, 
                         where I'm studying Software Engineering.
-                        Team Member of the Planetary Robotics Team, where I
+                        I'm a member of the Planetary Robotics Team, where I
                         work on the software, electrical, mechanical, and
                         physics aspects of the rover.
                     </p>
