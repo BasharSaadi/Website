@@ -1,94 +1,102 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
-    <title>Bashar Saadi - Software Engineer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bashar Saadi</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <header>
-      <div class="head-container">
-        <img class="pp" src="./imgs/Bashar.jpeg" alt="" />
-        <div>
+    <div id="dhead" class="container">
+      <div class="row">
+        <div id="dpic">
+          <img src="assets/Bashar.jpeg" class="ppic" />
+        </div>
+        <div id="ddesc">
           <h1>Bashar Saadi</h1>
-          <h4>Software Engineer</h4>
-          <p>I like building stuff.</p>
-          <p>Currently invested in merging AI, Maufacturing, and Robotics.</p>
-          <div>
-            <button>
-              <a href="https://github.com/BasharSaadi"
-                ><img class="logo" src="./imgs/github.png" alt=""
-              /></a>
-            </button>
-            <button>
-              <a href="https://twitter.com/BasharOkay"
-                ><img class="logo" src="./imgs/X.png" alt=""
-              /></a>
-            </button>
+          <h2>I like building stuff</h2>
+          <div id="dico">
+            <a href="https://twitter.com/BasharOkay"><img src="assets/X.png" class="iico" style="max-width: 52px;" /></a>
+            <a href="https://github.com/BasharSaadi"><img src="assets/github.png" class="iico"/></a>
           </div>
         </div>
       </div>
-    </header>
-    <div>
-      <hr class="solid" />
-      <div class="history">
-        <div class="container">
-          <img class="institution" src="./imgs/Ross.jpeg" alt="" />
-          <h3>Ross Video</h3>
-          <h4>September 2022 - December 2022</h4>
-          <div class="info">
-            <p>
-              Joined Ross Video (Co-op) as a Automation Specialist, where I
-              worked on the development of Inception, specifically the unit and
-              integration testing of the product. I also contributed to the
-              development and maintaince of the CI/CD pipeline.
-            </p>
-          </div>
-        </div>
-        <div class="container">
-          <img class="institution" src="./imgs/DataVisual.jpeg" alt="" />
-          <h3>DataVisual Marketing</h3>
-          <h4>November 2019 - January 2022</h4>
-          <div class="info">
-            <p>
-              Joined DataVisual as a Jr. Tech Engineer, where I spent a lot of
-              time troubleshooting and solving problems with various audio and
-              visual equitment. I also spent a lot of time in the warehouse
-              where I was shipping/receiving products and maintaining inventory.
-              I provided desktop support 24/7 for the office and our customers.
-            </p>
-          </div>
-        </div>
-        <div class="container">
-          <img
-            class="institution"
-            src="./imgs/Carleton_University.jpeg"
-            alt=""
-          />
-          <h3>Carleton University</h3>
-          <h4>September 2020 - December 2025</h4>
-          <div class="info">
-            <p>
-              Currently a 3rd year student at Carleton University, where I'm
-              studying Software Engineering. I'm a member of the Planetary
-              Robotics Team, where I work on the software, electrical,
-              mechanical, and physics aspects of the rover.
-            </p>
-          </div>
-        </div>
-      </div>
-      <hr class="solid" />
     </div>
-    <footer>
-      <p class="ftrname">© 2023 Bashar Saadi</p>
-    </footer>
+
+    <hr>
+
+    <div id="history" class="container">
+      
+      <div class="entry row">
+        <div class="timespan">
+          2025
+        </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="assets/Carleton_University.jpeg" style="max-width: 32px;"/>
+        </div>
+        <div class="desc">
+          BEng at Carleton University with a major in Software 
+        </div>
+        
+      </div>
+
+      <div class="entry row">
+        <div class="timespan">
+            2022 - 2022
+        </div>
+        <div class="ico">
+            <div class="entry-dot"></div>
+            <img src="assets/Ross.jpeg" style="max-width: 32px;"/>
+        </div>
+        <div class="desc">
+            Coop at Ross Video as an Automation Specialist
+        </div>
+      </div>
+
+      <div class="entry row">
+        <div class="timespan">
+            2019 - 2022
+        </div>
+        <div class="ico">
+            <div class="entry-dot"></div>
+            <img src="assets/DataVisual.jpeg" style="max-width: 32px;"/>
+        </div>
+        <div class="desc">
+            Jr. Tech Engineer at DataVisual Marketing
+        </div>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div id="pet-projects" class="container">
+      <div class="ctitle">projects</div>
+
+      <div class="project">
+        <div class="pico"><img src="assets/GPT.webp"></div>
+        <div class="pdesc"><a href="https://github.com/BasharSaadi/GPT">GPT</a> using the decode transformer from the famous paper <a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need</a></div>
+        <div class="pend"></div>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <div class="ctitle">additional info</div>
+      <ul style="padding-left: 10px;">
+        <li>A long time ago (2010) I was apart of the Trickshotting community within the Call of Duty community. This is where I started to learn Photoshop, Sony Vegas Pro, Cinema 4D, After Effects, etc.  </li>
+        <li>0 frameworks were used to make this simple website</li>
+      </ul>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br>
   </body>
+  <hr>
+  <footer>
+    <div class="container">
+        <div class="desc">© 2023 Bashar Saadi</div>
+    </div>
+  </footer>
 </html>
