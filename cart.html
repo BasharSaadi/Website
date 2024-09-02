@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bashar Saadi - Cart</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <div id="dark-mode-toggle">
+        <button id="dark-mode-btn">💡</button>
+    </div>
+
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        <div id="cart-items"></div>
+        <p>Total: $<span id="cart-total">0</span></p>
+        <button id="checkout-button">Checkout with Stripe</button>
+    </div>
+
+    <script src="js/darkmode.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+        function displayCart() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let cartItems = $('#cart-items');
+            let total = 0;
+            cartItems.empty();
+            cart.forEach((item, index) => {
+                cartItems.append(`<p>${item.item} - $${item.price} <button onclick="removeItem(${index})">Remove</button></p>`);
+                total += item.price;
+            });
+            $('#cart-total').text(total);
+        }
+
+        function removeItem(index) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            displayCart();
+            updateCartCount();
+        }
+
+        $(document).ready(() => {
+            displayCart();
+            
+            const stripe = Stripe('your_stripe_publishable_key');
+            const checkoutButton = $('#checkout-button');
+            
+            checkoutButton.on('click', function() {
+                $.ajax({
+                    url: 'create-checkout-session.php',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({
+                        cart: JSON.parse(localStorage.getItem('cart')) || []
+                    }),
+                    success: function(data) {
+                        return stripe.redirectToCheckout({ sessionId: data.id });
+                    },
+                    error: function(error) {
+                        console.error('Error:', error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
